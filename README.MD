@@ -3,7 +3,7 @@
 A sleek and responsive weather forecast web application that delivers real-time weather data with a clean, modern UI.
 
 ## 🌐 Live Demo
-🔗 https://<your-username>.github.io/<repo-name>/
+🔗 https://<your-username>.github.io/
 
 ## ✨ Features
 - 🔍 Search weather by city name with autocomplete
