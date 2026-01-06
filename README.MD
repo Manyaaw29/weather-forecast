@@ -3,7 +3,7 @@
 A sleek and responsive weather forecast web application that delivers real-time weather data with a clean, modern UI.
 
 ## 🌐 Live Demo
-🔗 https://<your-username>.github.io/
+🔗  https://manyaaw29.github.io/weather-forecast/
 
 ## ✨ Features
 - 🔍 Search weather by city name with autocomplete
@@ -35,6 +35,7 @@ Key learning goals included:
 ## ⚠️ Note on API Key
 This project uses a public Weather API key for demo purposes.  
 For production use, consider securing or rotating the API key.
+
 
 
 ⭐ If you like this project, consider giving it a star!
