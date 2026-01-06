@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatherly</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="search-bar">
+    <div class="search-container">
+      <div class="logo-section">
+        <img class="logo-icon" src="logo.webp" alt="Weather Logo">
+        <span class="logo-text">Weatherly</span>
+      </div>
+      <div class="search-input-wrapper">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Search location..."
+          autocomplete="off"
+        />
+        <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+        <button id="search-btn" onclick="getWeather()">Search</button>
+      </div>
+      <div class="search-buttons">
+        <button id="location-btn" onclick="getCurrentLocation()" title="Use current location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2v4m0 12v4M2 12h4m12 0h4"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="error" id="error"></div>
+  <div class="loading" id="loading" style="display: none;">
+    Fetching weather data...
+  </div>
+
+  <div class="dashboard" id="weather-info" style="display: none;">
+    <div class="left-column">
+      <div class="hourly-forecast">
+        <h3 class="section-title">Hourly forecast</h3>
+        <div class="hourly-list" id="hourly-list">
+        </div>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="current-snapshot">
+        
+        <div class="current-snapshot-header">
+          <div class="current-snapshot-left">
+            <h1 class="city-name" id="city-name">City</h1>
+            <p class="date-time" id="date">Date & Time</p>
+            <p class="weather-description" id="weather-description">
+              Weather Description
+            </p>
+          </div>
+          <div class="current-snapshot-right">
+            <div class="temperature" id="temperature">0°C</div>
+            <img
+              src=""
+              alt="Weather Icon"
+              class="weather-icon"
+              id="weather-icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="details-box">
+        <div class="details-grid">
+          <div class="detail-card">
+            <h3>Feels Like</h3>
+            <p class="detail-value" id="feels-like">0°C</p>
+          </div>
+          <div class="detail-card">
+            <h3>Humidity</h3>
+            <p class="detail-value" id="humidity">0%</p>
+          </div>
+          <div class="detail-card">
+            <h3>Wind</h3>
+            <p class="detail-value" id="wind-speed">0 km/h</p>
+          </div>
+          <div class="detail-card">
+            <h3>Chances of Rain</h3>
+            <p class="detail-value" id="chance-rain">0%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="daily-forecast-box">
+        <h3>Daily forecast</h3>
+        <div class="daily-grid" id="daily-forecast">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js">
+
+  </script>
+</body>
+</html>
