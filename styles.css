@@ -570,14 +570,6 @@ body::after {
   flex-direction: column;
 }
 
-.hourly-forecast .section-title {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
 
 .hourly-forecast .section-title {
   font-size: 0.9rem;
@@ -663,26 +655,37 @@ body::after {
     flex-direction: column;
     gap: 1rem;
     padding: 0 1.5rem;
+    position: relative;
   }
 
   .logo-section {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
   }
 
-  .search-input-wrapper {
-    width: 100%;
-    max-width: none;
-    flex-direction: column;
+  .search-buttons {
+    position: absolute;
+    top: 0.9rem;
+    right: 1.5rem;
   }
 
-  #search-btn {
-    width: 100%;
+  #location-btn {
+    padding: 0.6rem;
+    border-radius: 10px;
   }
 
   .dashboard {
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
+    gap: 1.5rem;
   }
+
+  .current-snapshot { order: 1; }
+  .left-column { order: 2; }
+  .details-box { order: 3; }
+  .daily-forecast-box { order: 4; }
 
   .details-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -698,6 +701,83 @@ body::after {
   }
 
   .current-snapshot-right {
-    margin-top: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+  }
+
+  .hourly-forecast {
+    max-height: 320px;
+    overflow-y: auto;
   }
 }
+
+@media (max-width: 480px) {
+  .search-bar {
+    padding: 1rem 0;
+  }
+
+  .search-input-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .search-input-wrapper input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+
+  #search-btn {
+    width: auto;
+    margin-left: auto;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .search-buttons {
+    margin-top: -1.5rem;
+  }
+
+  .dashboard {
+    padding: 1rem;
+    gap: 1.2rem;
+  }
+
+  .current-snapshot {
+    padding: 1.5rem;
+  }
+
+  .city-name {
+    font-size: 1.5rem;
+  }
+
+  .temperature {
+    font-size: 3rem;
+    margin-right: 0;
+  }
+
+  .weather-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .hourly-item {
+    padding: 0.8rem 1rem;
+  }
+
+  .hourly-time {
+    min-width: 50px;
+  }
+
+  .daily-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
