@@ -1,47 +1,40 @@
-# 🌤️ Weatherly
+# 🌤️ Weatherly — Weather Forecast Web App
 
-Weatherly is a modern, responsive **weather forecast web application** built using **HTML5, CSS3, and Vanilla JavaScript**.  
-It delivers real-time weather updates through a clean interface, smooth animations, and a calm, mist-inspired visual design.
+A sleek and responsive weather forecast web application that delivers real-time weather data with a clean, modern UI.
 
-The application uses **WeatherAPI.com** to fetch accurate weather data, and date & time are displayed based on the **location’s timezone provided by the API**.
-
----
-
-## 📌 Overview
-
-Weatherly allows users to quickly check weather conditions for any city worldwide.  
-With features like autocomplete search, hourly forecasts, and location-based weather detection, the app focuses on both **usability** and **aesthetic design**.
-
----
-
-## 🛠️ Tech Stack & Usage
-
-- **HTML5** – Structures the layout and content of the application  
-- **CSS3** – Handles styling, responsiveness, animations, and visual effects  
-- **Vanilla JavaScript** – Manages API calls, user interactions, and dynamic DOM updates without any frameworks  
-- **WeatherAPI.com** – Supplies real-time weather, hourly, and multi-day forecast data  
-
----
+## 🌐 Live Demo
+🔗 https://<your-username>.github.io/<repo-name>/
 
 ## ✨ Features
-
-- Search weather by city name  
-- Fetch weather using current location  
-- Displays local date & time based on timezone  
-- Current temperature and feels-like temperature  
-- Humidity, wind speed, and rain probability  
-- Hourly and multi-day forecasts  
-- Autocomplete city search  
-- Smooth animated mist/fog background  
-- Fully responsive design  
-
----
+- 🔍 Search weather by city name with autocomplete
+- 📍 Get weather using current location (Geolocation API)
+- 🌡️ Real-time temperature, feels-like, humidity, wind & rain chance
+- ⏰ Hourly weather forecast (scrollable)
+- 📅 7-day weather forecast
+- 🎨 Modern dark UI with smooth animations
+- 📱 Fully responsive across devices
 
 ## 🎯 Project Goals
+This project was built to **revise and strengthen core JavaScript concepts** through a real-world application.
 
-- Practice real-world API integration  
-- Improve DOM manipulation using Vanilla JavaScript  
-- Build a visually pleasing yet functional UI  
-- Create a responsive and user-friendly weather dashboard  
+Key learning goals included:
+- Working with **asynchronous JavaScript** (`fetch`, `async/await`)
+- Handling **API integration** and dynamic data rendering
+- Understanding **DOM manipulation** and event handling
+- Implementing **debounced search** and autocomplete logic
+- Managing **state updates** without frameworks
+- Building a **responsive UI** using pure CSS
+- Practicing clean code structure and UI logic separation
 
----
+## 🛠️ Built With
+- **HTML5**
+- **CSS3** (custom styling, animations, responsive layout)
+- **JavaScript (ES6)**
+- **WeatherAPI** for real-time weather data
+
+## ⚠️ Note on API Key
+This project uses a public Weather API key for demo purposes.  
+For production use, consider securing or rotating the API key.
+
+
+⭐ If you like this project, consider giving it a star!

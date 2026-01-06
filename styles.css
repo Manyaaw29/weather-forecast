@@ -239,7 +239,7 @@ body::before {
   );
   border: 1px solid rgba(185, 205, 228, 0.6);
   border-radius: 12px;
-  color: #0b1419; /* darker text = softer, premium */
+  color: #0b1419; 
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
