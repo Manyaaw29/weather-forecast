@@ -37,5 +37,3 @@ This project uses a public Weather API key for demo purposes.
 For production use, consider securing or rotating the API key.
 
 
-
-⭐ If you like this project, consider giving it a star!
